@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Dumbledore</title>
+  <link rel="icon" type="image/x-icon" href="about.png">
+  <meta name="description" content="Albus Dumbledore is the former headmaster of Hogwarts school for wizarding and witchcraft.">
+  <meta name="keywords" content="Albus Dumbledore, Harry Potter, Hogwarts, Magic, wizard">
+  <meta name="author" content="Omer Cohen">
+  </head>
+</head>
+<body>
+<div id="menu">
+  <ul>
+    <img id="logo" src="dumbi_logo.png" width="40px"/>
+    <li><a href="#about"><img src="about.png" alt="About Me"></i>About Me</a></li>
+    <li><a href="#photos"><img src="photos.png" alt="My Photos"></i>My Photos</a></li>
+    <li><a href="#playlist"><img src="playlist.png" alt="My Playlist"></i>My Playlist</a></li>
+    <li><a href="#like"><img src="like.png" alt="Like"></i>Like</a></li>
+    <li><a href="#qrcoder"><img src="qrcoder.png" alt="QR code"></i>QR code</a></li>
+    <li><a href="#spa"><img src="qa.png" alt="Q&A"></i>Q&A</a></li>
+    <li><a href="#contact"><img src="contact.png" alt="Contact Me"></i>Contact Me</a></li>
+  </ul>
+</div>
+		  
+<section id="about" class="section" style="color:rgb(241, 219, 200); text-align:start;">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h2 img id="logo1" src="about.png" width="40px" style="font-size: 36px; color: black; text-align: center;background-color: rgba(250, 235, 215, 0.815);">About Me</h2>
+
+<div style="background-image: url(dumbeldore_background.jpeg); background-size:auto; height:300px;padding-bottom: 80px; padding-top: 20px;">
+<p style="margin-left: 600px;margin-right: auto;width: 50%;background-color: black;">
+Hello, my name is Albus Dumbledore, and I am the Headmaster of Hogwarts School of Witchcraft and Wizardry. I have spent my life studying and practicing magic, and have dedicated myself to the protection of the wizarding world from dark forces. My journey began as a young wizard, when I discovered my talent for magic and began to learn under some of the greatest wizards of my time. I went on to become a powerful wizard in my own right, and have used my knowledge and skill to fight against those who would do harm to our world.
+</p>
+<p style="margin-left: 600px;margin-right: auto;width: 50%;background-color: black;">
+As Headmaster of Hogwarts, I have a great responsibility to ensure the safety and education of our students. I take this responsibility very seriously, and strive to create a welcoming and supportive environment for all who attend our school. I believe that education is the key to creating a better world, and I work tirelessly to instill this belief in all who come to Hogwarts.
+</p>
+<p style="margin-left: 600px;margin-right: auto;width: 50%;background-color: black;">
+Throughout my life, I have faced many challenges and obstacles, but I have always persevered through the power of love and hope. I have learned that even in the darkest of times, there is always a light to be found, and it is this belief that has carried me through even the most difficult of circumstances.
+</p>
+<p style="margin-left: 600px;margin-right: auto;width: 50%;background-color: black;">
+Thank you for taking the time reading this, and please feel comfortable explore my personal website.
+</p>
+</div>
+</section>
+
+<section id="photos" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h2 style="font-size: 36px; color: black; text-align: center; background-color: rgba(250, 235, 215, 0.815);">My Photos</h2>
+<br/>
+<div class="photo-gallery">
+  <a href="#img1">
+    <img src="dumbi1.jpeg" alt="Image 1" class="photo">
+  </a>
+  <a href="#img2">
+    <img src="dunbi2.jpeg" alt="Image 2" class="photo">
+  </a>
+  <a href="#img3">
+    <img src="dumbi3.jpeg" alt="Image 3" class="photo">
+  </a>
+  <a href="#img4">
+    <img src="dumbi4.jpeg" alt="Image 4" class="photo">
+  </a>
+  <a href="#img5">
+    <img src="dumbi5.jpeg" alt="Image 5" class="photo">
+  </a>
+  <a href="#img6">
+    <img src="dumbi6.jpg" alt="Image 6" class="photo">
+  </a>
+  <a href="#img7">
+    <img src="dumbi_frog.jpeg" alt="Image 7" class="photo">
+  </a>
+</div>
+
+<div class="overlay" id="img1">
+  <img src="dumbi1.jpeg" alt="Overlay Image" class="overlay-img">
+  <a href="#" class="close">&times;</a>
+</div>
+
+<div class="overlay" id="img2">
+  <img src="dunbi2.jpeg" alt="Overlay Image" class="overlay-img">
+  <a href="#" class="close">&times;</a>
+</div>
+
+<div class="overlay" id="img3">
+  <img src="dumbi3.jpeg" alt="Overlay Image" class="overlay-img">
+  <a href="#" class="close">&times;</a>
+</div>
+
+<div class="overlay" id="img4">
+  <img src="dumbi4.jpeg" alt="Overlay Image" class="overlay-img">
+  <a href="#" class="close">&times;</a>
+</div>
+
+<div class="overlay" id="img5">
+  <img src="dumbi5.jpeg" alt="Overlay Image" class="overlay-img">
+  <a href="#" class="close">&times;</a>
+</div>
+
+<div class="overlay" id="img6">
+  <img src="dumbi6.jpg" alt="Overlay Image" class="overlay-img">
+  <a href="#" class="close">&times;</a>
+</div>
+
+<div class="overlay" id="img7">
+  <img src="dumbi_frog.jpeg" alt="Overlay Image" class="overlay-img">
+  <a href="#" class="close">&times;</a>
+</div>
+
+<script>
+  const closeButtons = document.querySelectorAll('.close');
+  closeButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      button.parentElement.style.display = 'none';
+    });
+  });
+
+  const overlays = document.querySelectorAll('.overlay');
+  overlays.forEach(overlay => {
+    overlay.addEventListener('click', (event) => {
+      if (event.target === overlay) {
+        overlay.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="playlist" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h2 style="font-size: 36px; color: black; text-align: center;background-color: rgba(250, 235, 215, 0.815);">My Playlist</h2>
+<br/>
+<p style="font-size: 18px; color: gray; text-align: center;">This is a great song by 'The Weird Sisters'. I even made them come and preforme for the traditional dance in 'Hogwarts'!</p>
+<p style="font-size: 18px; color: gray; text-align: center;">The dance is a tradition of the 'TriWizard' tournament, where two more schools for wizarding and witchcraft are participating, 'Durmstrang' and 'Beauxbatons'</p>
+<p style="font-size: 18px; color: gray; text-align: center;">I was so excited that they came! just listen to this great SONG!!</p>
+<p style="font-size: 15px; color: gray; text-align: center;">p.s. - I REALLY like Hippogrifs</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BRGAUnFuKj0" title="YouTube video player" frameborder="40" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen style="margin: 50px auto 0; display: block;"></iframe>
+<br/>
+
+</section>
+<section id="like" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1 style="font-size: 36px; color: black; text-align: center;background-color: rgba(250, 235, 215, 0.815);">give me a like</h1>
+<div id="fb-root"></div>
+<img style="padding-left: 550px;" src="likeDumbi.jpeg" alt="likeDumbi" class="like">
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="N3e8SVPv"></script>
+<div style="padding-left: 500px;" class="fb-like" data-href="https://web-development-environments-2023.github.io/206119919/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+</div>
+
+
+<section id="qrcoder" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1 style="font-size: 36px; color: black; text-align: center;background-color: rgba(250, 235, 215, 0.815);">scan my code</h1>
+<br/>
+<div class="qrcode-container">
+  <figure class="qrcode-figure">
+    <img style="padding-left: 500px;" src="qrcodescan.png" alt="QR code" class="qrcode">
+  </figure>
+  <div class="image-overlay"></div>
+  <img src="SMILE.jpg" alt="like" class="like-image">
+</div>
+</section>
+
+<section id="spa" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1 style="font-size: 36px; color: black; text-align: center;background-color: rgba(250, 235, 215, 0.815);">Questions</h1>
+<br/>
+<div id="answers">
+  <div id="q1">
+  <h2>Question #1</h2>
+  <p>
+    <b>Three main differences between web1, web2, and web3:</b>
+    Firstly, web1 is a static web which provides basic information and has limited user interactivity.
+    On the other hand, web2 is a dynamic web that allows user interaction and collaboration, such as multimaedia content creation and social networking.
+    Lastly, web3 is decentralized web that uses blockchain technology to create trustless systems and to enable decentralized applications, which named dApps.
+    <br/>
+    Secondly, web1 and web2 relying on centralized servers and have a client-server architecture, where the server provides the content and the client consumes it.
+    Conversely, web3 uses a peer-to-peer(P2P) network where every node can store and share data, enabling decentralized data storageand retrieval.
+    <br/>
+    Lastly, web1 and web2 rely on traditional web technologies like HTML, JavaScript and CSS, whereas web3 uses blockchain technologies like smart contracts, decentralized file storage identity management.
+  </p>
+</div>
+<div id="q2">
+  <h2>Question #2</h2>
+  <p>
+    <b>Use case for example:</b>
+    Supppose a user wish to search for "best coding bootcamps in a certain city"
+    On web1, the user might go to a static website that lists the top coding bootcamps in a particular city based only on information from other bootcamps's websites, or other online related websites.
+    The user can view and read the rankings or brief descriptions of each bootcamp, but cannot contribute their own reviews or ratings.
+    <br/>
+    On web2, the user moght access a dynamic website or platform, such as a SwitchUp or Course Report, that allows them to view coding bootcamp rankings and read reviews from other users who have attended the bootcamps.
+    Additionaly, the user contribute their own reviews, ratings, and recommendations for bootcamps, as well as interact with other users by leaving comments on reviews and sharing their own experiences.
+    <br/>
+    On the other hand, on web3, the user might access a dApp (i.e. decentralized application) that allows users to contribute and access information about coding bootcamps in the particular city.
+    The dApp might use a blockchain-based system to motivate users to share rheir own reviews, recommendations and ratings for bootcamps.
+    Users can interact with each other, leave comments and share their own experiences in more detail, including projects they worked on and job offers they received after graduating the bootcamp.
+    The information on the dApp is decentralized and more trustworthy since it's based on user-generated content and motivated by blockchain rewards.
+    <br/>
+    Therefore, the user experiance and features available on the user when searching for a different query, such as coding bootacamps on a certain city, can also vary significantly depending on which type of web tech the user is on.
+  </p>
+</div>
+<br/>
+<br/>
+</section>
+
+<section id="contact" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1  style="font-size: 36px; color: rgb(4, 3, 3); text-align: center;background-color: rgba(250, 235, 215, 0.815);">contact me</h1>
+<!-- <form id="email_form" action="mailto:omer6@post.bgu.ac.il" method="post" enctype="text/plain">
+  <label style="font: 1em sans-serif;color:rgb(243, 174, 174); text-align:left;">Insert your Email address:</label>
+  <input type="text" required/>
+  <label style="font: 1em sans-serif;color:rgb(243, 174, 174); text-align:left;">Insert your message subject:</label>
+  <input type="text" />
+  <div id="your_message_section">
+  <label style="font: 1em sans-serif;color: rgb(243, 174, 174);">Enter your Message:</label>
+  <select id="emoji_select" onchange="addItem(this.value)">
+    <option value="⚡">⚡</option>
+    <option value="😀">😀</option>
+    <option value="😂">😂</option>
+    <option value="😍">😍</option>
+    <option value="👍">👍</option>
+    <option value="👎">👎</option>
+    <option value="🍬">🍬</option>
+    <option value="🎃">🎃</option>
+    <option value="🎓">🎓</option>
+  </select>
+</div>
+  <textarea id="message_input" name="message_input" required></textarea>
+
+  <button type="submit" value="Send" >Send Email</button>
+  
+</form> -->
+<div class="shade">
+  <div class="blackboard">
+    <div class="form">
+      <form id="form" action="mailto:omer6@post.bgu.ac.il?subject=&body=" method="post" enctype="text/plain">
+        <p>
+          <label>Name: </label>
+          <input type="text" name="name" id="name" />
+        </p>
+        <p>
+          <label>Email: </label>
+          <input type="text" name="email" id="email" />
+        </p>
+        <p>
+          <label>Subject: </label>
+          <input type="text" name="subject" id="subject" />
+        </p>
+        <div>
+        <p>
+          <label>Message: </label>
+          <textarea input type="text" name="message" id="message"></textarea>
+          <select id="emoji_select" onchange="addItem(this.value)">
+            <option value="⚡">⚡</option>
+            <option value="😀">😀</option>
+            <option value="😂">😂</option>
+            <option value="😍">😍</option>
+            <option value="👍">👍</option>
+            <option value="👎">👎</option>
+            <option value="🍬">🍬</option>
+            <option value="🎃">🎃</option>
+            <option value="🎓">🎓</option>
+          </select>
+        </p>
+      </div>
+        <p class="wipeout">
+        
+          <input type="submit" value="Send" onclick="submitForm()" />
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  function submitForm() {
+    var subjectText = document.getElementById("subject").value;
+    var messageText = document.getElementById("message").value;
+    var mailtoLink = "mailto:omer6@post.bgu.ac.il?subject=" + encodeURIComponent(subjectText) + "&body=" + encodeURIComponent(messageText);
+    window.location.href = mailtoLink;
+  }
+</script>
+</section>
+
+<script>
+  function addItem(text) {
+    var textarea = document.getElementById("message");
+    textarea.value += text;
+  }
+</script>
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });​
+ </script>
+</body>
+</html>
+

@@ -1,0 +1,372 @@
+
+
+#menu {
+	position:fixed;
+	top: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 35px;
+	background-color: rgba(230, 204, 204, 0.534);
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	font-size: 18px;
+	cursor: pointer;
+	z-index: 1;
+  }
+
+  #menu li a {
+	display: flex;
+	align-items: center;
+  }
+
+  #menu li a img {
+	width: 32px;
+	height: 32px;
+	margin-right: 10px;
+  }
+
+  #menu li a:hover {
+	transform: scale(1.1);
+	cursor: url(magic.png), auto;
+  }
+
+  ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  }
+
+  li {
+	margin: 0 10px;
+  }
+
+  .bt:hover {
+	background-color: rgb(237, 0, 0);
+	cursor: url(wand.ico), auto;
+  }
+
+  body {
+	cursor: url(wand.ico), auto;
+  }
+
+  .photo-gallery {
+	background-color: rgba(250, 235, 215, 0.836);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .photo {
+	width: 250px;
+	height: 200px;
+	margin: 5px;
+	cursor: url(wand.ico);
+	 object-fit: cover;
+  }
+  
+  .overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 9999;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s ease-in-out;
+  }
+  
+  .overlay:target {
+	visibility: visible;
+	opacity: 1;
+  }
+  
+  .overlay-img {
+	max-width: 90%;
+	max-height: 90%;
+	margin: auto;
+  }
+  
+  .close {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 40px;
+	color: white;
+	text-decoration: none;
+  }
+  
+  .close:hover {
+	color: red;
+  }
+
+  #playlist {
+	position: relative;
+  }
+
+  #playlist h2 {
+	position: absolute;
+	top: 220px;
+	left: 50%;
+	transform: translateX(-50%)
+  }
+
+  #playlist iframe {
+	margin-top: 10px;
+  }
+
+  .qrcode-container {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .qrcode-figure {
+	margin: 20px;
+  }
+  
+  .qrcode {
+	display: block;
+	width: 35%;
+	height: auto;
+  }
+  
+  .image-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+  }
+  
+  .like-image {
+	position: absolute;
+	margin-left: 240px;
+	margin-top: 65px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 35%;
+	height: auto;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+  }
+  
+  .qrcode-container:hover .image-overlay {
+	opacity: 1;
+  }
+  
+  .qrcode-container:hover .like-image {
+	opacity: 1;
+  }
+
+  #spa{
+	background-image: url(DumbledoreOffice.jpg);
+	padding-bottom: 30px;
+  }
+
+#answers{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+#answers p{
+	line-height: 1.5;
+	font-size: 18px;
+}
+
+#q1{
+	display: block;
+	background-color: rgba(240, 255, 255, 0.461);
+	width: 42%;
+	height: 30%;
+
+}
+
+#q2{
+	display: block;
+	background-color: rgba(240, 255, 255, 0.707);
+	width: 42%;
+}
+
+
+.shade {
+	height: 100%;
+	background: url(hogwartsletter.jpg) center center fixed;
+	background-size: cover;
+	overflow: auto;
+	position:relative;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-image: linear-gradient( 150deg, rgba(0, 0, 0, 0.65), transparent);
+}
+
+.blackboard {
+	position: relative;
+	width: 640px;
+	margin: 7% auto;
+	border: tan solid 12px;
+	border-top: #bda27e solid 12px;
+	border-left: #b19876 solid 12px;
+	border-bottom: #c9ad86 solid 12px;
+	box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+	/* background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1)); */
+	background: url(hogwartsletter.jpg);
+	background-color: #333;
+}
+
+.blackboard:before {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.3)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent);
+	border: #000000 solid 2px;
+	content: "Contact Me";
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2.2em;
+	color: rgba(0, 0, 0, 0.909);
+	text-align: center;
+	padding-top: 20px;
+}
+
+.form {
+	padding: 70px 20px 20px;
+}
+
+p {
+	position: relative;
+	margin-bottom: 1em;
+}
+
+
+label {
+	vertical-align: middle;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.6em;
+	color: rgba(1, 0, 0, 0.7);
+  }
+  
+  p:nth-of-type(5) > label {
+	vertical-align: top;
+  }
+  
+  input,
+  textarea {
+	vertical-align: middle;
+	padding-top: 30px;
+	padding-left: 10px;
+	background: none;
+	border: none;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.6em;
+	color: rgba(7, 5, 5, 0.8);
+	line-height: .6em;
+	outline: none;
+  }
+  
+  textarea {
+	cursor: pointer;
+	height: 50px;
+	font-size: 1.4em;
+	line-height: 1em;
+	resize: none;
+  }
+  
+  input[type="submit"] {
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.7);
+	line-height: 1em;
+	padding: 0;
+  }
+  
+  input[type="submit"]:focus {
+	background: rgba(238, 238, 238, 0.2);
+	color: rgba(0, 0, 0, 0.2);
+  }
+  
+  ::-moz-selection {
+	background: rgba(238, 238, 238, 0.2);
+	color: rgba(0, 0, 0, 0.2);
+	text-shadow: none;
+  }
+  
+  ::selection {
+	background: rgba(238, 238, 238, 0.4);
+	color: rgba(10, 5, 5, 0.386);
+	text-shadow: none;
+  }
+  
+/* #email_form{
+	width: 600px;
+	display:flex;
+	flex-direction: column;
+	height: 500px;
+	justify-content: center;
+	align-content: center;
+	background-image: url(hedwig.jpg);
+	background-size: cover;
+	margin-left: 350px;
+}
+
+input{
+	margin-bottom: 30px;
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 30px;
+	border: none;
+	background-color: rgba(240, 248, 255, 0.632);
+}
+
+
+
+#message_input{
+	height: 50%;
+	max-height: 70%;
+	margin-left: 10px;
+	margin-right: 10px;
+	border:none;
+	background-color: rgba(240, 248, 255, 0.66);
+}
+
+#your_message_section{
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 20px;
+}
+
+#emoji_select {
+	margin-left: 10px;
+	width: 100px;
+	height: 20px;
+  }
+  
+button{
+	height: 40px;
+	width: 150px;
+	background-color: rgba(158, 2, 2, 0.596);
+	transition: ease-in-out 0.3s;
+	margin: auto;
+	margin-top: 10px;
+	border: none;
+	font-size: 18px;
+	font: 500;
+	color: rgba(255, 255, 255, 0.432);
+}
+
+button:hover{
+	transform: scale(1.2);
+} */
